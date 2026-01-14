@@ -1,0 +1,28 @@
+title: Jauligian
+description: Projects, experiments, and things I'm building
+author: jauligian
+
+# GitHub Pages settings
+url: "https://jauligian.github.io"
+baseurl: ""   # user sites must leave this empty
+
+# Theme (simple, clean, widely used)
+theme: minima
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed       # generates an RSS feed automatically
+  - jekyll-seo-tag    # improves search engine visibility
+
+# Navigation links (minima supports this)
+header_pages:
+  - index.md
+  - projects.md
+  - about.md
+
+# Markdown + formatting
+markdown: kramdown
+permalink: /:title/
+
+# Optional social links (minima supports these)
+github_username: jauligian
