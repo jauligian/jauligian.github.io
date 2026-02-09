@@ -1,0 +1,99 @@
+/* Design tokens: centralize sizes/colors for easy tuning */
+:root {
+  --max-w: 1100px;       /* maximum content width */
+  --accent: #0b72ef;     /* primary accent color for links/buttons */
+  --muted: #6b7280;      /* subdued text color for descriptions */
+  --bg: #ffffff;         /* page background (unused here but available) */
+  --card-bg: #fbfbff;    /* subtle card background */
+}
+
+/* Page container: centers content and sets typography */
+.wrap {
+  max-width: var(--max-w);
+  margin: 28px auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color: #111827;
+}
+
+/* Hero block: simple vertical stack for title + subtitle */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.hero p { /* subtitle styling */
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Projects grid: responsive columns using auto-fit + minmax */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+/* Card: visual container for each project */
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.06); /* subtle elevation */
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Card typography: title and body */
+.card h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Tech badges: wrap and spacing */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Badge appearance: pill shape, light background, accent color */
+.badge {
+  background: #eef6ff;
+  color: var(--accent);
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  border: 1px solid rgba(11, 114, 239, 0.08);
+}
+
+/* CTA button: pinned to bottom of card via margin-top:auto */
+.cta {
+  margin-top: auto; /* pushes CTA to bottom when card grows */
+  display: inline-block;
+  text-decoration: none;
+  background: var(--accent);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Small-screen tweak: reduce container padding */
+@media (max-width: 520px) {
+  .wrap {
+    padding: 12px;
+  }
+}
