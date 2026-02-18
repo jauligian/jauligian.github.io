@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project 3
-permalink: /projects/project3/
+title: The Legend of Zelda NES Remake
+permalink: /projects/ZeldaNES/
 ---
 
 
@@ -13,4 +13,4 @@ A deeper explanation of what this project does.
 [Try it here](https://example.com)
 
 ## Source Code
-[GitHub Repo](https://github.com/jauligian/my-cool-project)
+[GitHub Repo](https://github.com/jauligian/Legend-of-Zelda-NES)
