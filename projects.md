@@ -13,12 +13,12 @@ Create a conspiracy theory or story between any two people, topics, places, or a
 
 ---
 
-### Project 2
-A quick summary of the idea or what problem it solves.  
-[Learn more →](/projects/project2)
+### Hypixel Bazaar Tool
+Parses data from Hypixel Skyblock's bazaar API to find profitable item trades. Organizes data and sorts in a variety of ways to help identify the best items to help you make money. Includes features liking clicking the item to copy the command to open the item in the bazaar in game and sorting based on set options or from the categories.
+[Learn more →](/projects/BazaarProfit)
 
 ---
 
-### Project 3
-A sentence or two describing the project.  
+### Legend of Zelda NES Remake
+A remake of the NES game The Legend of Zelda in C# with additional features and easter eggs such as different characters to play as with their own abilities or secret inputs. This game includes the first two levels of the dungeons.  
 [Learn more →](/projects/ZeldaNES)
